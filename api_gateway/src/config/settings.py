@@ -32,10 +32,10 @@ class BaseSettings(PydanticBaseSettings):
     def service_mapping(self) -> dict[str, Service]:
         return {
             "service-a": Service(
-                name="Service A", internal_url=self.service_a_url, slag="service-a"
+                name="Servicio A", internal_url=self.service_a_url, slag="service-a"
             ),
             "service-b": Service(
-                name="Service B", internal_url=self.service_b_url, slag="service-b"
+                name="Servicio B", internal_url=self.service_b_url, slag="service-b"
             ),
         }
 

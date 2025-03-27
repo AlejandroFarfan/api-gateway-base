@@ -8,7 +8,7 @@ from jose import jwt
 import aiohttp
 
 
-app = FastAPI(title="Service A", version="0.1.0", docs_url=None, redoc_url=None)
+app = FastAPI(title="Servicio A", version="0.1.0", docs_url=None, redoc_url=None)
 
 
 auth_scheme = HTTPBearer(
@@ -20,7 +20,7 @@ auth_scheme = HTTPBearer(
 
 @app.get("/hello", dependencies=[Depends(auth_scheme)], tags=["Hello"])
 async def hello():
-    return {"message": "Hello from Service A"}
+    return {"message": "Hola de Servicio A"}
 
 
 class LoginInput(BaseModel):
@@ -41,4 +41,4 @@ async def cross_service_hello():
     async with aiohttp.ClientSession() as session:
         async with session.get("http://service-b:8080/internal/hello") as resp:
             response = await resp.json()
-    return {"message": f"Hello from Service A and {response["message"]}"}
+    return {"message": f"Hola de Servicio A and {response["message"]}"}

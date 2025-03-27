@@ -11,13 +11,13 @@ func main() {
 
 	router.GET("/hello", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"message": "Hello from Service B",
+			"message": "Hola de servicio B",
 		})
 	})
 
 	router.GET("/internal/hello", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"message": "internal hello from Service B",
+			"message": "hola interno de Servicio B",
 		})
 	})
 
@@ -25,7 +25,7 @@ func main() {
 		openapi := gin.H{
 			"openapi": "3.1.0",
 			"info": gin.H{
-				"title":   "Service B",
+				"title":   "Servicio B",
 				"version": "0.1.0",
 			},
 			"paths": gin.H{
