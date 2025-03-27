@@ -17,7 +17,7 @@ func main() {
 
 	router.GET("/internal/hello", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"message": "hola interno de Servicio B",
+			"message": "Hola interno de Servicio B",
 		})
 	})
 
@@ -26,7 +26,7 @@ func main() {
 			"openapi": "3.1.0",
 			"info": gin.H{
 				"title":   "Servicio B",
-				"version": "0.1.0",
+				"version": "1.0.0",
 			},
 			"paths": gin.H{
 				"/hello": gin.H{

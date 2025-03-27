@@ -8,7 +8,7 @@ from jose import jwt
 import aiohttp
 
 
-app = FastAPI(title="Servicio A", version="0.1.0", docs_url=None, redoc_url=None)
+app = FastAPI(title="Servicio A", version="1.0.0", docs_url=None, redoc_url=None)
 
 
 auth_scheme = HTTPBearer(
@@ -41,4 +41,4 @@ async def cross_service_hello():
     async with aiohttp.ClientSession() as session:
         async with session.get("http://service-b:8080/internal/hello") as resp:
             response = await resp.json()
-    return {"message": f"Hola de Servicio A and {response["message"]}"}
+    return {"message": f"Hola de Servicio A y {response["message"]}"}
