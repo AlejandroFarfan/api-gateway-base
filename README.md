@@ -7,8 +7,8 @@ Asignacion: Patrones más usados en microservicios
 ## Integrantes:
 - Alejandro Farfán Montenegro
 - Gina Sana Rojas
-- Jean Pool
-- Daniel Ureña Arvelaez
+- Jean Pool Zambrano
+- Daniel Ureña Arveláez
 
 La presentación se puede encontrar con el nombre
 
