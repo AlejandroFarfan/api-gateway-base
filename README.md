@@ -1,5 +1,13 @@
-# api-gateway-template
+# Api Gateway Template
 
-<a href="https://github.com/shaliamekh/api-gateway-template/actions?query=workflow%3A+branch%3Amain++" target="_blank">
-    <img src="https://github.com/shaliamekh/api-gateway-template/actions/workflows/ci.yaml/badge.svg?branch=main&event=push" alt="CI">
-</a>
+Asignacion: Patrones más usados en microservicios
+
+**Grupo 6**
+
+## Integrantes:
+- Alejandro Farfán Montenegro
+- Gina Sana Rojas
+- Jean Pool
+- Daniel Ureña Arvelaez
+
+> Note: This is a fork of the project https://github.com/shaliamekh/api-gateway-template
